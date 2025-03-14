@@ -1,10 +1,38 @@
 {
   "expo": {
-    "scheme": "acme",
+    "name": "PasteKeeper",
+    "slug": "pastekeeper",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pastekeeper.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.pastekeeper.app"
+    },
     "plugins": [
       "expo-router"
     ],
-    "name": "pastekeeper",
-    "slug": "pastekeeper"
+    "scheme": "pastekeeper",
+    "newArchEnabled": true,
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c641917b-1f41-4b41-93ad-373f25b19ef3"
+      }
+    }
   }
 }
