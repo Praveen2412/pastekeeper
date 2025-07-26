@@ -1,17 +1,68 @@
 # PasteKeeper
 
-A clipboard manager app that helps you keep track of your clipboard history, including text and images.
+A modern, cross-platform clipboard manager built with React Native and Expo. PasteKeeper helps yo## ⚙️ Configuration Options
 
-## Features
+Configure the app's behavior in the Settings screen:
 
-- Clipboard monitoring in foreground and background
-- Support for text, URLs, code snippets, and images
-- Categorization of clipboard content
-- Favorites system
-- Swipe actions for quick operations
-- Dark mode support
+- ⏱️ Monitoring interval (1s - 30s)
+- 🔄 Background monitoring settings
+- 🚀 Auto-start preferences
+- 🎨 Theme customization
+  - Light/Dark mode
+  - Custom colors
+  - Font sizes
+- 💾 Storage management
+  - Maximum history size
+  - Auto-cleanup rules
+  - Backup settings
 
-## Image Clipboard Support
+## 🔧 Troubleshooting
+
+Common issues and solutions:
+
+### Clipboard Monitoring Issues
+
+1. **Permissions**
+   - Ensure clipboard permissions are granted in app settings
+   - Check notification permissions for background monitoring
+
+2. **Platform-Specific**
+   - Android: Disable battery optimization for reliable background operation
+   - iOS: Background execution has system limitations
+   - Web: Page must have focus for clipboard access
+
+3. **Performance**
+   - Clear history if app becomes slow
+   - Adjust monitoring interval
+   - Check storage usage
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## 📝 License
+
+[MIT License](LICENSE) - feel free to use this project for your own learning and development.ble history of your clipboard contents, including text, URLs, code snippets, and images, making it easier to manage and reuse copied content across your devices.
+
+## ✨ Features
+
+- 📋 Real-time clipboard monitoring in foreground and background
+- 📝 Support for multiple content types:
+  - Plain text
+  - Rich text
+  - URLs with preview
+  - Code snippets with syntax highlighting
+  - Images with thumbnails
+- 🏷️ Smart content categorization and tagging
+- ⭐ Favorites system for quick access
+- 🔄 Intuitive swipe actions for quick operations
+- 🌓 Dark mode and theme customization
+- 🔍 Full-text search with filters
+- 📱 Cross-platform support (iOS, Android, Web)
+- 🔒 Privacy-focused with local storage
+- ⚡ Performance optimized for large histories
+
+## 🖼️ Image Clipboard Support
 
 ### Current Implementation
 
@@ -44,25 +95,64 @@ For optimal background monitoring on Android:
 2. Use `BackgroundFetch` API for periodic checks
 3. Implement a work manager for scheduled clipboard checks
 
-## Installation
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 14 or newer
+- npm or yarn
+- Expo CLI (`npm install -g expo-cli`)
+- For mobile development:
+  - iOS: Xcode (Mac only)
+  - Android: Android Studio and SDK
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/pastekeeper.git
+   cd pastekeeper
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Copy the sample environment file:
+   ```bash
+   cp sample.env .env
+   ```
+
+4. Configure your environment variables in `.env`
+
+### Running the App
 
 ```bash
-npm install
-# or
-yarn install
-```
-
-## Running the App
-
-```bash
+# Start the development server
 npm start
 # or
 yarn start
+
+# Run on iOS
+npm run ios
+# or
+yarn ios
+
+# Run on Android
+npm run android
+# or
+yarn android
+
+# Run on web
+npm run web
+# or
+yarn web
 ```
 
-Then follow the instructions to open the app on your device or emulator.
-
-## Configuration
+## ⚙️ Configuration
 
 You can configure the app's behavior in the Settings screen:
 
