@@ -4,8 +4,8 @@ import { Platform } from 'react-native';
 
 // Replace with your Supabase URL and anon key
 // You can find these in your Supabase dashboard under Settings > API
-const SUPABASE_URL = 'https://ocflkuqlrxbhklvplbca.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jZmxrdXFscnhiaGtsdnBsYmNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE1NTcxNzUsImV4cCI6MjA1NzEzMzE3NX0.CS6IfTmogVckokgl-cw5SgLrpjtVa_NK5bLXqDYxWKs';
+const SUPABASE_URL = '';
+const SUPABASE_ANON_KEY = '';
 
 // Create a custom storage implementation for AsyncStorage
 const AsyncStorageAdapter = {
